@@ -13,6 +13,7 @@ You're done
 
 INSTRUCTIONS FOR SETUP OF CUSTOM COLORPALETTES
 - Take your color palette file, make sure it is a png and also of a 512x128 resolution. Also take not of the filename, you're gonna need it later. I recommend using https://coolors.co/ to create your color palette and then manually resizing and cropping the downloaded file (I know its a pain but I don't think there's an easier way). Some example color palettes are within the "palettes" folder on this github.
+- The palette size can be as big as 255 and at minimum of 2.
 - Go into the textures folder within your reshade folder within your game ("C:\pathToYourGame\gameFolder\reshade-shaders\Textures"). Then put the color palette file in the textures folder.
 - Now that your texture is in your folder, open the ReShade UI and navigate to the PixelArtShader.fx file. Then, you're gonna want to right-click the file and click "Edit Source Code".
 - Once you've opened the source code navigate to the line containing "texture ColorLUT <source = "PutFilenameHere.png";>" (should be line 70 as of writing this).
