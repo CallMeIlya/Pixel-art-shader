@@ -105,6 +105,8 @@ float4 Quantization(float4 vpos: SV_Position, float2 texcoord : TEXCOORD) : SV_T
 	
 	//formula which lowers the number of colors down to ColorsPerChannel or PaletteSize amount
 	float3 color;
+
+	//this greyscale step is redundant for the shader, but also allows us to compute luminance or hue or saturation of the greyscale value if needed.
 	if(CustomPalette) {
 		color = ((float3)floor(pixelColor*(CustomPaletteSize-1)+0.5))/((float3)(CustomPaletteSize-1));
 		color[0] = color[1];
