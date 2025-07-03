@@ -67,7 +67,7 @@ sampler DownsizedBufferSamp {
 
 
 //make sure your color palette texture is a png with a width of 512 and height of 128
-texture ColorLUT <source = "MorningBlues5CLUT.png";> {
+texture ColorLUT <source = "PutFilenameHere.png";> {
 	Width = 512;
 	Height = 128;
 };
